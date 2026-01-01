@@ -39,8 +39,8 @@
         "url": "https://www.youtube.com/watch?v=H6jJ9mXW1eI"
       },
       {
-        "name": "Professional CUDA C Programming Book",
-        "url": "https://www.cs.utexas.edu/~rossbach/cs380p/papers/cuda-programming.pdf"
+        "name": "CUDA by Example Book",
+        "url": "https://edoras.sdsu.edu/~mthomas/docs/cuda/cuda_by_example.book.pdf"
       }
     ],
     "optional_resources": [
@@ -57,12 +57,12 @@
         "url": "https://www.olcf.ornl.gov/cuda-training-series/"
       },
       {
-        "name": "CUDA by Example Book",
-        "url": "https://edoras.sdsu.edu/~mthomas/docs/cuda/cuda_by_example.book.pdf"
-      },
-      {
         "name": "CUDA Application Design and Development Book",
         "url": "https://vowi.fsinf.at/images/9/97/TU_Wien-GPU_Architectures_and_Programming_VU_%28Bartocci%29_-_CUDA_Application_Design_and_Development.pdf"
+      },
+      {
+        "name": "Professional CUDA C Programming Book",
+        "url": "https://www.cs.utexas.edu/~rossbach/cs380p/papers/cuda-programming.pdf"
       }
     ],
     "depends_on": ["PyTorch", "C++", "C", "NCCL"]
@@ -70,7 +70,26 @@
   "NCCL": {
     "completion": 0,
     "mandatory_resources": [
-
+      {
+        "name": "NCCL: The Inter-GPU Communication Library Powering Multi-GPU AI",
+        "url": "https://www.nvidia.com/en-us/on-demand/session/gtc25-s72583/"
+      },
+      {
+        "name": "Multi-GPU Programming in NCCL and NVSHMEM",
+        "url": "https://www.youtube.com/live/2xMzQ1Z2Qe0"
+      },
+      {
+        "name": "Tutorial: GPU Communication Libraries for Accelerating HPC and AI Applications",
+        "url": "https://www.youtube.com/watch?v=rlA5QreHekk&list=PLBM5Lly_T4yRGBFgforeMTDpjasC_PV7r"
+      },
+      {
+        "name": "Scaling Deep Learning Training with NCCL",
+        "url": "https://developer.nvidia.com/blog/scaling-deep-learning-training-nccl"
+      },
+      {
+        "name": "NCCL Documentation",
+        "url": "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html"
+      }
     ],
     "optional_resources": [
 
