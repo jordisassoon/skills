@@ -1,190 +1,262 @@
 {
-  "Deep Learning Foundations": {
-    "completion": 100,
-    "mandatory_resources": [
-      "CS231n: Convolutional Neural Networks",
-      "Deep Learning Book"
-    ],
-    "optional_resources": [
-      "Hands-On ML with Scikit-Learn and TensorFlow"
-    ],
-    "depends_on": []
-  },
   "Python": {
     "completion": 100,
     "mandatory_resources": [
-      "Official Python Tutorial",
-      "PEP 8"
+       
     ],
     "optional_resources": [
-      "Automate the Boring Stuff"
+    
     ],
-    "depends_on": ["Deep Learning Foundations"]
+    "depends_on": []
   },
-  "C / C++": {
-    "completion": 0,
+  "PyTorch": {
+    "completion": 100,
     "mandatory_resources": [
-      "C++ Primer",
-      "Effective Modern C++"
+
     ],
     "optional_resources": [
-      "High Performance C++"
+    
     ],
-    "depends_on": ["Deep Learning Foundations"]
+    "depends_on": ["Python"]
   },
   "CUDA": {
     "completion": 0,
     "mandatory_resources": [
-      "CUDA Programming Guide",
-      "PyTorch CUDA Basics"
+
     ],
     "optional_resources": [
-      "NVIDIA Deep Learning Examples"
+
     ],
-    "depends_on": ["C / C++"]
+    "depends_on": ["PyTorch", "C++", "C", "NCCL"]
   },
-  "Rust / Julia": {
+  "NCCL": {
     "completion": 0,
     "mandatory_resources": [
-      "The Rust Book",
-      "Julia Documentation"
+
     ],
     "optional_resources": [
-      "Rust for ML",
-      "Julia for High-Performance Computing"
+
     ],
-    "depends_on": ["Deep Learning Foundations"]
+    "depends_on": []
   },
-  "GPU Programming": {
+  "Triton": {
     "completion": 0,
     "mandatory_resources": [
-      "CUDA Kernel Optimization Guide",
-      "PyTorch CUDA Tutorials"
+
     ],
     "optional_resources": [
-      "Memory Coalescing Techniques"
+
     ],
-    "depends_on": ["CUDA", "Python"]
+    "depends_on": ["CUDA"]
   },
-  "Distributed Training": {
+  "C++": {
     "completion": 0,
     "mandatory_resources": [
-      "PyTorch Distributed Docs",
-      "Horovod Tutorials"
+
     ],
     "optional_resources": [
-      "TensorFlow Multi-GPU Guide"
+
     ],
-    "depends_on": ["GPU Programming"]
+    "depends_on": []
   },
-  "Mixed Precision & Gradient Accumulation": {
+  "C": {
     "completion": 0,
     "mandatory_resources": [
-      "NVIDIA Apex Docs",
-      "PyTorch AMP Guide"
+
     ],
     "optional_resources": [
-      "Memory-Efficient Training Tips"
+
     ],
-    "depends_on": ["Distributed Training"]
+    "depends_on": []
   },
-  "Memory Optimization & Profiling": {
+  "Deep Language Learning": {
     "completion": 0,
     "mandatory_resources": [
-      "PyTorch Profiler Docs",
-      "NVIDIA Nsight Systems Guide"
+
     ],
     "optional_resources": [
-      "Profiling Best Practices for Deep Learning"
+
     ],
-    "depends_on": ["Mixed Precision & Gradient Accumulation"]
+    "depends_on": ["PyTorch"]
   },
-  "Model Compression & Quantization": {
+  "Massively Parallel Processing": {
     "completion": 0,
     "mandatory_resources": [
-      "TensorRT Guide",
-      "ONNX Runtime Docs"
+
     ],
     "optional_resources": [
-      "Pruning and Knowledge Distillation Papers"
+
     ],
-    "depends_on": ["Memory Optimization & Profiling"]
+    "depends_on": ["CUDA", "NCCL", "Hardware"]
   },
-  "Inference Optimization": {
+  "Context Parallelism": {
     "completion": 0,
     "mandatory_resources": [
-      "TensorRT Optimization Guide",
-      "ONNX Runtime Inference Guide"
+
     ],
     "optional_resources": [
-      "Batching & Pipeline Techniques"
+
     ],
-    "depends_on": ["Model Compression & Quantization"]
+    "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
   },
-  "Pipeline & System-Level Optimization": {
+  "Data Parallelism": {
     "completion": 0,
     "mandatory_resources": [
-      "End-to-End ML Pipeline Optimization",
-      "DataLoader and I/O Efficiency"
+
     ],
     "optional_resources": [
-      "Distributed Storage & Networking for ML"
+
     ],
-    "depends_on": ["Inference Optimization"]
+    "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
   },
-  "CPU & Memory Optimization": {
+  "Tensor Parallelism": {
     "completion": 0,
     "mandatory_resources": [
-      "Vectorization (SIMD / AVX)",
-      "NUMA Awareness and Cache Optimization"
+
     ],
     "optional_resources": [
-      "OpenMP / TBB Multi-threading"
+
     ],
-    "depends_on": ["Deep Learning Foundations"]
+    "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
   },
-  "Advanced Algorithms & Parallelism": {
+  "ZeRO (FSDP)": {
     "completion": 0,
     "mandatory_resources": [
-      "Efficient Matrix Multiplication",
-      "Sparse/Dense Linear Algebra"
+
     ],
     "optional_resources": [
-      "MapReduce-style Parallelism"
+
     ],
-    "depends_on": ["CPU & Memory Optimization"]
+    "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
   },
-  "Profiling & Bottleneck Analysis": {
+  "Pipeline Parallelism": {
     "completion": 0,
     "mandatory_resources": [
-      "FLOPs Analysis",
-      "GPU / CPU Profiling Tools"
+
     ],
     "optional_resources": [
-      "Nsight Systems / Nsight Compute"
+
     ],
-    "depends_on": ["Advanced Algorithms & Parallelism", "Memory Optimization & Profiling"]
+    "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
   },
-  "Custom Kernels & Triton": {
+  "Expert Parallelism": {
     "completion": 0,
     "mandatory_resources": [
-      "Triton Language Documentation",
-      "Writing Custom CUDA Kernels"
+
     ],
     "optional_resources": [
-      "Auto-Tuning Kernels"
+
     ],
-    "depends_on": ["GPU Programming", "Advanced Algorithms & Parallelism"]
+    "depends_on": ["Massively Parallel Processing", "MoE"]
   },
-  "TPU & Specialized Hardware": {
+  "MoE": {
     "completion": 0,
     "mandatory_resources": [
-      "Google TPU Documentation",
-      "XLA Compilation Guide"
+
     ],
     "optional_resources": [
-      "Graphcore / Habana AI Guides"
+
     ],
-    "depends_on": ["Deep Learning Foundations"]
+    "depends_on": ["Deep Language Learning"]
+  },
+  "Hardware": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": []
+  },
+  "Data Types": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["Hardware"]
+  },
+  "Quantization": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["Data Types", "Deep Language Learning"]
+  },
+  "Profiling and Benchmarking": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["PyTorch", "CUDA", "NCCL"]
+  },
+  "Compilers": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["C", "C++", "Python", "Hardware", "Massively Parallel Processing"]
+  },
+  "Cluster Topology": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["Massively Parallel Processing"]
+  },
+  "Scheduling": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["Massively Parallel Processing"]
+  },
+  "Fault Tolerance": {
+    "completion": 0,
+    "mandatory_resources": [
+      "Preemption"
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["Massively Parallel Processing", "Deep Language Learning"]
+  },
+  "Cost Estimation": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+
+    ],
+    "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
+  },
+  "Workload Management": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+      
+    ],
+    "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
   }
 }
