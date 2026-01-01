@@ -33,6 +33,14 @@
       {
         "name": "CUDA C++ Class Part 3",
         "url": "https://www.youtube.com/watch?v=kTWoGCSugB4"
+      },
+      {
+        "name": "CUDA C++ Class Part 4",
+        "url": "https://www.youtube.com/watch?v=H6jJ9mXW1eI"
+      },
+      {
+        "name": "Professional CUDA C Programming Book",
+        "url": "https://www.cs.utexas.edu/~rossbach/cs380p/papers/cuda-programming.pdf"
       }
     ],
     "optional_resources": [
@@ -43,6 +51,18 @@
       {
         "name": "Interview with NVIDIA CUDA Architect Stephen Jones",
         "url": "https://www.youtube.com/watch?v=dNUMNifgExs"
+      },
+      {
+        "name": "CUDA Training Series by NVIDIA",
+        "url": "https://www.olcf.ornl.gov/cuda-training-series/"
+      },
+      {
+        "name": "CUDA by Example Book",
+        "url": "https://edoras.sdsu.edu/~mthomas/docs/cuda/cuda_by_example.book.pdf"
+      },
+      {
+        "name": "CUDA Application Design and Development Book",
+        "url": "https://vowi.fsinf.at/images/9/97/TU_Wien-GPU_Architectures_and_Programming_VU_%28Bartocci%29_-_CUDA_Application_Design_and_Development.pdf"
       }
     ],
     "depends_on": ["PyTorch", "C++", "C", "NCCL"]
