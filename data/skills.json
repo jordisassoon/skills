@@ -22,10 +22,28 @@
   "CUDA": {
     "completion": 0,
     "mandatory_resources": [
-
+      {
+        "name": "CUDA C++ Class Part 1",
+        "url": "https://www.youtube.com/watch?v=Sdjn9FOkhnA"
+      },
+      {
+        "name": "CUDA C++ Class Part 2",
+        "url": "https://www.youtube.com/watch?v=pyW9St8uM8w"
+      },
+      {
+        "name": "CUDA C++ Class Part 3",
+        "url": "https://www.youtube.com/watch?v=kTWoGCSugB4"
+      }
     ],
     "optional_resources": [
-
+      {
+        "name": "CUDA Programming Course",      
+        "url": "https://youtube.com/watch?v=86FAWCzIe_4&t=667s&pp=ygUEY3VkYQ%3D%3D"
+      },
+      {
+        "name": "Interview with NVIDIA CUDA Architect Stephen Jones",
+        "url": "https://www.youtube.com/watch?v=dNUMNifgExs"
+      }
     ],
     "depends_on": ["PyTorch", "C++", "C", "NCCL"]
   },
@@ -55,7 +73,10 @@
 
     ],
     "optional_resources": [
-
+      {
+        "name": "learncpp.com",
+        "url": "https://learncpp.com/"
+      }
     ],
     "depends_on": []
   },
@@ -72,7 +93,14 @@
   "Deep Language Learning": {
     "completion": 0,
     "mandatory_resources": [
-
+      {
+        "name": "DeepSeek V3 Technical Paper",
+        "url": "https://arxiv.org/abs/2412.19437v1"
+      },
+      {
+        "name": "Olmo 3 Paper",
+        "url": "https://arxiv.org/abs/2512.13961"
+      }
     ],
     "optional_resources": [
 
@@ -85,6 +113,26 @@
       {
         "name": "Programming Massively Parallel Processors: A Hands-on Approach",
         "url": "https://www.cse.iitd.ac.in/~rijurekha/col851/necessary_reading/cudabook.pdf"
+      },
+      {
+        "name": "[DONE] Making Deep Learning Go Brrr From First Principles",
+        "url": "https://horace.io/brrr_intro.html"
+      },
+      {
+        "name": "GPUs Go Brrr",
+        "url": "https://hazyresearch.stanford.edu/blog/2024-05-12-tk"
+      },
+      {
+        "name": "[DONE] HuggingFace Ultra-Scale Playbook",
+        "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook"
+      },
+      {
+        "name": "DeepSeek V3 Technical Paper, Section 3",
+        "url": "https://arxiv.org/abs/2412.19437v1"
+      },
+      {
+        "name": "TorchTitan",
+        "url": "https://openreview.net/forum?id=SFN6Wm7YBI"
       }
     ],
     "optional_resources": [
@@ -96,7 +144,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "HuggingFace Ultra-Scale Playbook CP section",
+        "name": "[DONE] HuggingFace Ultra-Scale Playbook CP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=context_parallelism"
       }
     ],
@@ -109,7 +157,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "HuggingFace Ultra-Scale Playbook DP section",
+        "name": "[DONE] HuggingFace Ultra-Scale Playbook DP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=data_parallelism"
       }
     ],
@@ -122,7 +170,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "HuggingFace Ultra-Scale Playbook TP section",
+        "name": "[DONE] HuggingFace Ultra-Scale Playbook TP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=tensor_parallelism"
       }
     ],
@@ -135,7 +183,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "HuggingFace Ultra-Scale Playbook ZeRO section",
+        "name": "[DONE] HuggingFace Ultra-Scale Playbook ZeRO section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=zero_fully_sharded_data_parallel"
       }
     ],
@@ -148,7 +196,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "HuggingFace Ultra-Scale Playbook PP section",
+        "name": "[DONE] HuggingFace Ultra-Scale Playbook PP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=pipeline_parallelism"
       }
     ],
@@ -161,7 +209,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "HuggingFace Ultra-Scale Playbook EP section",
+        "name": "[DONE] HuggingFace Ultra-Scale Playbook EP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=expert_parallelism"
       }
     ],
@@ -221,7 +269,7 @@
     "optional_resources": [
 
     ],
-    "depends_on": ["PyTorch", "CUDA", "NCCL"]
+    "depends_on": ["PyTorch", "CUDA", "NCCL", "Hardware"]
   },
   "Compilers": {
     "completion": 0,
@@ -256,7 +304,7 @@
   "Fault Tolerance": {
     "completion": 0,
     "mandatory_resources": [
-      
+
     ],
     "optional_resources": [
 
@@ -282,5 +330,15 @@
       
     ],
     "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
+  },
+  "Kernels": {
+    "completion": 0,
+    "mandatory_resources": [
+
+    ],
+    "optional_resources": [
+      
+    ],
+    "depends_on": ["CUDA", "Triton", "Massively Parallel Processing", "Deep Language Learning"]
   }
 }

@@ -71,6 +71,19 @@ for skill, data in skills.items():
     for dep in data["depends_on"]:
         G.add_edge(dep, skill)
 
+
+# Store all node attributes
+node_attrs = {n: G.nodes[n] for n in G.nodes}
+
+# Perform transitive reduction (returns a new graph)
+G_reduced = nx.transitive_reduction(G)
+
+# Reassign node attributes
+for n, attrs in node_attrs.items():
+    G_reduced.nodes[n].update(attrs)
+
+G = G_reduced
+
 # Compute global completion
 global_completion = sum(completion_values) / len(completion_values)
 
@@ -113,6 +126,24 @@ global_html = f"""
 Global Completion: {global_completion:.2f}%
 </div>
 """
+
+title = f"""
+<div style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: #2c2c2c;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    z-index: 9999;
+">
+A Performance Engineer's Guide to Success
+</div>
+"""
+
 
 # Info panel HTML (clickable node info)
 info_panel_html = """
@@ -162,6 +193,7 @@ with open("docs/index.html", "w") as f:
     </style>
   </head>
   <body>
+    {title}
     {global_html}
     {info_panel_html}
     {html_str}
