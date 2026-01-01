@@ -141,6 +141,11 @@ title = f"""
     z-index: 9999;
 ">
 A Performance Engineer's Guide to Success
+<br><br>
+
+Super Based Links:
+<br>
+<a href="https://www.youtube.com/@GPUMODE/videos">GPU Mode YT</a>
 </div>
 """
 
@@ -163,6 +168,7 @@ info_panel_html = """
 ">
 Click a node to see details here
 </div>
+
 """
 
 # Write final HTML

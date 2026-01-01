@@ -71,6 +71,14 @@
     "completion": 0,
     "mandatory_resources": [
       {
+        "name": "Scaling Deep Learning Training with NCCL",
+        "url": "https://developer.nvidia.com/blog/scaling-deep-learning-training-nccl"
+      },
+      {
+        "name":"Basics of NCCL",
+        "url": "https://www.youtube.com/watch?v=T22e3fgit-A"
+      },
+      {
         "name": "NCCL: The Inter-GPU Communication Library Powering Multi-GPU AI",
         "url": "https://www.nvidia.com/en-us/on-demand/session/gtc25-s72583/"
       },
@@ -81,28 +89,37 @@
       {
         "name": "Tutorial: GPU Communication Libraries for Accelerating HPC and AI Applications",
         "url": "https://www.youtube.com/watch?v=rlA5QreHekk&list=PLBM5Lly_T4yRGBFgforeMTDpjasC_PV7r"
-      },
-      {
-        "name": "Scaling Deep Learning Training with NCCL",
-        "url": "https://developer.nvidia.com/blog/scaling-deep-learning-training-nccl"
-      },
+      }
+    ],
+    "optional_resources": [
       {
         "name": "NCCL Documentation",
         "url": "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/index.html"
       }
-    ],
-    "optional_resources": [
-
     ],
     "depends_on": []
   },
   "Triton": {
     "completion": 0,
     "mandatory_resources": [
-
+      {
+        "name": "Triton Documentation",
+        "url": "https://triton-lang.org/"
+      },
+      {
+        "name": "Triton Tutorial",
+        "url": "https://github.com/VikParuchuri/triton_tutorial"
+      },
+      {
+        "name": "Practitioner's Guide to Triton",
+        "url": "https://www.youtube.com/watch?v=DdTsX6DQk24"
+      }
     ],
     "optional_resources": [
-
+      {
+        "name": "Triton Resources List",
+        "url": "https://github.com/rkinas/triton-resources"
+      }
     ],
     "depends_on": ["CUDA"]
   },
