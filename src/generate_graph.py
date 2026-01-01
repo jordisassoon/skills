@@ -31,9 +31,24 @@ completion_values = []
 for skill, data in skills.items():
     completion_values.append(data.get("completion", 0))
     
-    # Rich HTML tooltip
-    mandatory_resources = "".join(f'<li><a href="#">{r}</a></li>' for r in data['mandatory_resources']) if data['mandatory_resources'] else "<li>None</li>"
-    optional_resources = "".join(f'<li><a href="#">{r}</a></li>' for r in data['optional_resources']) if data['optional_resources'] else "<li>None</li>"
+    # Rich HTML tooltip# Mandatory resources
+    if data['mandatory_resources']:
+        mandatory_resources = "".join(
+            f'<li><a href="{r["url"]}" target="_blank">{r["name"]}</a></li>' 
+            for r in data['mandatory_resources']
+        )
+    else:
+        mandatory_resources = "<li>None</li>"
+
+    # Optional resources
+    if data['optional_resources']:
+        optional_resources = "".join(
+            f'<li><a href="{r["url"]}" target="_blank">{r["name"]}</a></li>' 
+            for r in data['optional_resources']
+        )
+    else:
+        optional_resources = "<li>None</li>"
+
     tooltip = f"""
     <h3>{skill}</h3>
     <p>Completion: {data['completion']}%</p>
