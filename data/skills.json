@@ -156,10 +156,77 @@
       {
         "name": "Olmo 3 Paper",
         "url": "https://arxiv.org/abs/2512.13961"
+      },
+      {
+        "name": "PaLM 2 Paper",
+        "url": "https://arxiv.org/abs/2305.10403"
+      },
+      {
+        "name": "LLaMA 3 Paper",
+        "url": "https://arxiv.org/abs/2407.21783"
+      },
+      {
+        "name": "Attention Is All You Need Paper",
+        "url": "https://arxiv.org/abs/1706.03762"
+      },
+      {
+        "name": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding Paper",
+        "url": "https://arxiv.org/abs/1810.04805"
+      },
+      {
+        "name": "Language Models are Few-Shot Learners Paper",
+        "url": "https://arxiv.org/abs/2005.14165"
+      },
+      {
+        "name": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer Paper",
+        "url": "https://arxiv.org/abs/1910.10683"
+      },
+      {
+        "name": "Scaling Laws for Neural Language Models Paper",
+        "url": "https://arxiv.org/abs/2001.08361"
+      },
+      {
+        "name": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks Paper",
+        "url": "https://arxiv.org/abs/2005.11401"
+      },
+      {
+        "name": "LoRA: Low-Rank Adaptation of Large Language Models Paper",
+        "url": "https://arxiv.org/abs/2106.09685"
+      },
+      {
+        "name": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models Paper",
+        "url": "https://arxiv.org/abs/2201.11903"
+      },
+      {
+        "name": "Self-Consistent Improves Chain of Thought Reasoning in Language Models Paper",
+        "url": "https://arxiv.org/abs/2203.11171"
+      },
+      {
+        "name": "Language Models (Mostly) Know What They Know Paper",
+        "url": "https://arxiv.org/abs/2207.05221"
+      },
+      {
+        "name": "Training language models to follow instructions with human feedback Paper",
+        "url": "https://arxiv.org/abs/2203.02155"
+      },
+      {
+        "name": "Toolformer: Language Models Can Teach Themselves to Use Tools Paper",
+        "url": "https://arxiv.org/abs/2302.04761"
+      },
+      {
+        "name": "ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction",
+        "url": "https://arxiv.org/abs/2112.01488"
+      },
+      {
+        "name": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena Paper",
+        "url": "https://arxiv.org/abs/2306.05685"
       }
     ],
     "optional_resources": [
-
+      {
+        "name": "Machine Learning Engineering Open Book",
+        "url": "https://github.com/stas00/ml-engineering"
+      }
     ],
     "depends_on": ["PyTorch"]
   },
@@ -171,7 +238,7 @@
         "url": "https://www.cse.iitd.ac.in/~rijurekha/col851/necessary_reading/cudabook.pdf"
       },
       {
-        "name": "[DONE] Making Deep Learning Go Brrr From First Principles",
+        "name": "Making Deep Learning Go Brrr From First Principles",
         "url": "https://horace.io/brrr_intro.html"
       },
       {
@@ -179,7 +246,7 @@
         "url": "https://hazyresearch.stanford.edu/blog/2024-05-12-tk"
       },
       {
-        "name": "[DONE] HuggingFace Ultra-Scale Playbook",
+        "name": "HuggingFace Ultra-Scale Playbook",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook"
       },
       {
@@ -189,10 +256,29 @@
       {
         "name": "TorchTitan",
         "url": "https://openreview.net/forum?id=SFN6Wm7YBI"
+      },
+      {
+        "name": "Bringing HPC Techniques to Deep Learning",
+        "url": "https://andrew.gibiansky.com/blog/machine-learning/baidu-allreduce/"
+      },
+      {
+        "name": "Ring Attention Explained",
+        "url": "https://coconut-mode.com/posts/ring-attention/"
       }
     ],
     "optional_resources": [
-
+      {
+        "name": "Ring Flash Attention Repo",
+        "url": "https://github.com/zhuzilin/ring-flash-attention"
+      },
+      {
+        "name": "Visualizing 6D Mesh Parallelism",
+        "url": "https://main-horse.github.io/posts/visualizing-6d/"
+      },
+      {
+        "name": "How to Scale Your Model: A Systems View of LLMs on TPUs by Google",
+        "url": "https://jax-ml.github.io/scaling-book/"
+      }
     ],
     "depends_on": ["CUDA", "NCCL", "Hardware"]
   },
@@ -200,7 +286,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "[DONE] HuggingFace Ultra-Scale Playbook CP section",
+        "name": "HuggingFace Ultra-Scale Playbook CP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=context_parallelism"
       }
     ],
@@ -213,8 +299,12 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "[DONE] HuggingFace Ultra-Scale Playbook DP section",
+        "name": "HuggingFace Ultra-Scale Playbook DP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=data_parallelism"
+      },
+      {
+        "name": "Data-Parallel Distributed Training of Deep Learning Models",
+        "url": "https://siboehm.com/articles/22/data-parallel-training"
       }
     ],
     "optional_resources": [
@@ -226,8 +316,12 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "[DONE] HuggingFace Ultra-Scale Playbook TP section",
+        "name": "HuggingFace Ultra-Scale Playbook TP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=tensor_parallelism"
+      },
+      {
+        "name": "Reducing Activation Recomputation in Large Transformer Models",
+        "url": "https://arxiv.org/abs/2205.05198"
       }
     ],
     "optional_resources": [
@@ -239,12 +333,27 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "[DONE] HuggingFace Ultra-Scale Playbook ZeRO section",
+        "name": "HuggingFace Ultra-Scale Playbook ZeRO section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=zero_fully_sharded_data_parallel"
+      },
+      {
+        "name": "ZeRO: Memory Optimization Towards Training A Trillion Parameter Models",
+        "url": "https://arxiv.org/abs/1910.02054"
+      },
+      {
+        "name": "PyTorch FSDP: Experiences on Scaling Fully Sharded Data Parallel",
+        "url": "https://arxiv.org/abs/2304.11277"
       }
     ],
     "optional_resources": [
-
+      {
+        "name": "DeepSpeed ZeRO vs 3D Parallelism",
+        "url": "https://www.deepspeed.ai/tutorials/large-models-w-deepspeed/#understanding-performance-tradeoff-between-zero-and-3d-parallelism"
+      },
+      {
+        "name": "FSDP in 500 LOC",
+        "url": "https://github.com/facebookresearch/capi/blob/main/fsdp.py"
+      }
     ],
     "depends_on": ["Deep Language Learning", "Massively Parallel Processing"]
   },
@@ -252,8 +361,16 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "[DONE] HuggingFace Ultra-Scale Playbook PP section",
+        "name": "HuggingFace Ultra-Scale Playbook PP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=pipeline_parallelism"
+      },
+      {
+        "name": "NVIDIA Technical Blog on Pipeline Parallelism",
+        "url": "https://developer.nvidia.com/blog/scaling-language-model-training-to-a-trillion-parameters-using-megatron/#pipeline_parallelism"
+      },
+      {
+        "name": "Breadth-First Pipeline Parallelism",
+        "url": "https://arxiv.org/abs/2211.05953"
       }
     ],
     "optional_resources": [
@@ -265,7 +382,7 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "[DONE] HuggingFace Ultra-Scale Playbook EP section",
+        "name": "HuggingFace Ultra-Scale Playbook EP section",
         "url": "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=expert_parallelism"
       }
     ],
@@ -290,7 +407,22 @@
   "Hardware": {
     "completion": 0,
     "mandatory_resources": [
-
+      {
+        "name": "Modal GPU Glossary",
+        "url": "https://modal.com/gpu-glossary"
+      },
+      {
+        "name": "Building Meta’s GenAI Infrastructure",
+        "url": "https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/"
+      },
+      {
+        "name": "100,000 H100 Clusters",
+        "url": "https://newsletter.semianalysis.com/p/100000-h100-clusters-power-network"
+      },
+      {
+        "name": "Fire-Flyer AI-HPC",
+        "url": "https://www.arxiv.org/abs/2408.14158"
+      }
     ],
     "optional_resources": [
 
@@ -310,7 +442,10 @@
   "Quantization": {
     "completion": 0,
     "mandatory_resources": [
-
+      {
+        "name": "Mixed Precision Training",
+        "url": "https://arxiv.org/abs/1710.03740"
+      }
     ],
     "optional_resources": [
 

@@ -146,6 +146,8 @@ A Performance Engineer's Guide to Success
 Super Based Links:
 <br>
 <a href="https://www.youtube.com/@GPUMODE/videos">GPUMODE YT</a>
+<br>
+<a href="https://www.youtube.com/@Eleuther_AI/videos">EleutherAI YT</a>
 </div>
 """
 
