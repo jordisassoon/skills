@@ -91,8 +91,8 @@ global_completion = sum(completion_values) / len(completion_values)
 net = Network(
     height="100vh",          # full page height
     width="100%",            # full page width
-    bgcolor="#141414",       # dark background
-    font_color="white",
+    bgcolor="rgba(0,0,0,0)",   # ← transparent
+    font_color="black",
     directed=True,
     cdn_resources="in_line",
 )
@@ -183,7 +183,7 @@ with open("docs/index.html", "w") as f:
         padding: 0;
         width: 100%;
         height: 100%;
-        background: #141414;
+        background: transparent;
         overflow: hidden;
         display: flex;
         justify-content: center;
