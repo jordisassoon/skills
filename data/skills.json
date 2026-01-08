@@ -397,6 +397,14 @@
       {
         "name": "HuggingFace MoE Blog",
         "url": "https://huggingface.co/blog/moe"
+      },
+      {
+        "name": "MegaBlocks: Efficient Sparse Training with Mixture-of-Experts",
+        "url": "https://arxiv.org/abs/2211.15841"
+      },
+      {
+        "name": "FasterMoE: modeling and optimizing training of large-scale dynamic pre-trained models",
+        "url": "https://dl.acm.org/doi/10.1145/3503221.3508418"
       }
     ],
     "optional_resources": [
@@ -408,12 +416,12 @@
     "completion": 0,
     "mandatory_resources": [
       {
-        "name": "Modal GPU Glossary",
-        "url": "https://modal.com/gpu-glossary"
+        "name": "How do Graphics Cards Work? Exploring GPU Architecture",
+        "url": "https://www.youtube.com/watch?v=h9Z4oGN89MU"
       },
       {
-        "name": "Building Meta’s GenAI Infrastructure",
-        "url": "https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/"
+        "name": "Modal GPU Glossary",
+        "url": "https://modal.com/gpu-glossary"
       },
       {
         "name": "100,000 H100 Clusters",
@@ -422,10 +430,17 @@
       {
         "name": "Fire-Flyer AI-HPC",
         "url": "https://www.arxiv.org/abs/2408.14158"
+      },
+      {
+        "name": "Performance Hints",
+        "url": "https://abseil.io/fast/hints.html"
       }
     ],
     "optional_resources": [
-
+      {
+        "name": "Building Meta’s GenAI Infrastructure",
+        "url": "https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/"
+      }
     ],
     "depends_on": []
   },

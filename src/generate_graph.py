@@ -179,6 +179,7 @@ with open("docs/index.html", "w") as f:
 <html>
   <head>
     <title>Skill Graph</title>
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
       html, body {{
         margin: 0;
