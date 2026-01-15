@@ -440,6 +440,10 @@
       {
         "name": "Building Meta’s GenAI Infrastructure",
         "url": "https://engineering.fb.com/2024/03/12/data-center-engineering/building-metas-genai-infrastructure/"
+      },
+      {
+        "name": "Strangely Matrix Multiplications on GPUs Run Faster When Given 'Predictable' Data!",
+        "url": "https://www.thonking.ai/p/strangely-matrix-multiplications"
       }
     ],
     "depends_on": []
@@ -470,7 +474,26 @@
   "Profiling and Benchmarking": {
     "completion": 0,
     "mandatory_resources": [
-
+      {
+        "name": "The LLM Engineer's Almanac by Modal",
+        "url": "https://modal.com/llm-almanac/summary"
+      },
+      {
+        "name": "Transformer Inference Arithmetic",
+        "url": "https://kipp.ly/transformer-inference-arithmetic/"
+      },
+      {
+        "name": "Tracing and profiling GPU-accelerated PyTorch programs on Modal",
+        "url": "https://modal.com/docs/examples/torch_profiling"
+      },
+      {
+        "name": "Making GPUs go brr on Modal",
+        "url": "https://www.youtube.com/watch?v=4cesQJLyHA8"
+      },
+      {
+        "name": "Modal GPU Utilization Guide",
+        "url": "https://modal.com/blog/gpu-utilization-guide"
+      }
     ],
     "optional_resources": [
 
